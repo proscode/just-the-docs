@@ -34,7 +34,7 @@
     border-right: $border $border-color;
     border-left: $border $border-color;
     align-items: flex-end;
-    min-width: $nav-width-md;
+    min-width: $nav-width;
   }
 
   @include mq(lg) {
@@ -63,11 +63,11 @@
   @include mq(md) {
     position: relative;
     max-width: $content-width;
-    margin-left: $nav-width-md;
+    margin-left: $nav-width;
   }
   @media only screen and (min-width: 1065px) and (max-width: 1327px) {
-    margin-left: $nav-width-md;
-    width: calc((100% - 496px));
+    margin-left: $nav-width;
+    width: calc((100% - 528px));
   }
   
   @media only screen and (min-width: 1328px) {
