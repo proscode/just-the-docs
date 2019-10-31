@@ -29,6 +29,7 @@
     border-right: $border $border-color;
     border-left: $border $border-color;
     align-items: flex-end;
+    min-width: $nav-width;
   }
 
   @include mq(lg) {
@@ -53,8 +54,12 @@
     max-width: $content-width;
     margin-left: $nav-width-md;
   }
-
-  @include mq(lg) {
+  @include mq(inside, 1328px, 50rem){ 
+    margin-left: $nav-width-md;
+    width: calc((100% - 528px));
+  }
+  
+  @include mq(min, 1328px) {
     margin-left: calc((100% - #{$content-width}) / 2);
   }
 }
