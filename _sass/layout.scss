@@ -22,7 +22,7 @@
   background-color: $sidebar-color;
   width: calc((100% - #{$content-width}) / 2);
   
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 50rem) {
     width: 100%;
     position: static;
   }
@@ -43,7 +43,7 @@
 }
 
 .side-bar-right {
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 50rem) {
     display: none;
   }
 }
