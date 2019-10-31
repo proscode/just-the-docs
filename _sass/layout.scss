@@ -21,6 +21,11 @@
   flex-wrap: wrap;
   background-color: $sidebar-color;
   width: calc((100% - #{$content-width}) / 2);
+  
+  @include mq(max, 31.25rem){ 
+    width: 100%;
+    position: static;
+  }
 
   @include mq(md) {
     flex-wrap: nowrap;
@@ -34,6 +39,12 @@
 
   @include mq(lg) {
     min-width: $nav-width;
+  }
+}
+
+.side-bar-right {
+  @include mq(max, 31.25rem){ 
+    display: none;
   }
 }
 
